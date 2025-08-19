@@ -34,11 +34,10 @@ export default function Intro() {
                 <motion.span 
                     className="absolute bottom-0 right-0 text-5xl pr-4 pb-4"
                     initial={{ scale: 0, opacity: 0 }}
-                    animate={{ scale: 1, opacity: 1 }}
+                    animate={{ scale: 1, opacity: 1, rotate: [0, -10, 10, -10, 0],}}
                     transition={{
-                        type: "spring",
+                        type: "tween",
                         stiffness: 125,
-                        delay: 0.1,
                         duration: 0.7,
                     }}
                     whileHover={{
