@@ -41,6 +41,11 @@ export default function Intro() {
                         delay: 0.1,
                         duration: 0.7,
                     }}
+                    whileHover={{
+                        rotate: [0, -15, 15, -15, 0], // Shake effect
+                        transition: { duration: 0.6 }, // Duration of the shake
+                        cursor: "pointer", // Change cursor to pointer
+                    }}
                 >
                     👋🏻
                 </motion.span>
