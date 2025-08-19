@@ -24,15 +24,15 @@ export default function Intro() {
                     <Image 
                         src="/intro.jpg" 
                         alt="Laura Khotemlyansky"
-                        width="192"
-                        height="192"
+                        width="512"
+                        height="512"
                         quality="95"
                         priority={true}
-                        className="h-24 w-24 rounded-full border-[0.35rem] border-white object-cover shadow-xl"
+                        className="h-64 w-64 rounded-full border-[0.35rem] border-white object-cover shadow-xl"
                     />
                 </motion.div>
                 <motion.span 
-                    className="absolute bottom-0 right-0 text-3xl"
+                    className="absolute bottom-0 right-0 text-5xl pr-4 pb-4"
                     initial={{ scale: 0, opacity: 0 }}
                     animate={{ scale: 1, opacity: 1 }}
                     transition={{
@@ -46,7 +46,7 @@ export default function Intro() {
                 </motion.span>
             </div>
         </div>
-        <motion.p 
+        <motion.h1 
             className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
             initial={{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -58,7 +58,7 @@ export default function Intro() {
                 building <span className="italic">sites & apps</span>. My focus is{" "}
                 <span className="underline">React (Next.js)
             </span>
-        </motion.p>
+        </motion.h1>
 
         <motion.div 
             className="flex flex-col sm:flex-row items-center justify-center gap-3 px-4 text-lg"
