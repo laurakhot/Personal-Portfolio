@@ -1,16 +1,16 @@
 'use client';
 
-import React, { useContext, useState } from 'react'
+import React from 'react'
 import { motion } from 'framer-motion';
 import { links } from '@/lib/data';
 import Link from 'next/link';
 import clsx from 'clsx';
-import { ActiveSectionContext } from '@/context/active-section-context';
+import { ActiveSectionContext, useActiveSectionContext } from '@/context/active-section-context';
 
 // {@link https://www.npmjs.com/package/clsx}
 // {@link https://www.npmjs.com/package/react-intersection-observer}
 export default function Header() {
-    const { activeSection, setActiveSection } = useContext(ActiveSectionContext);
+    const { activeSection, setActiveSection } = useActiveSectionContext();
     // tracking for the active section indicator on the header
   return (
     <header className="z-[999] relative">
