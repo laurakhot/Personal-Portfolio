@@ -10,7 +10,7 @@ import { ActiveSectionContext, useActiveSectionContext } from '@/context/active-
 // {@link https://www.npmjs.com/package/clsx}
 // {@link https://www.npmjs.com/package/react-intersection-observer}
 export default function Header() {
-    const { activeSection, setActiveSection } = useActiveSectionContext();
+    const { activeSection, setActiveSection, setLastClick } = useActiveSectionContext();
     // tracking for the active section indicator on the header
   return (
     <header className="z-[999] relative">
@@ -34,7 +34,10 @@ export default function Header() {
                                 "text-gray-950 font-semibold": activeSection === link.name
                                 }
                             )}
-                            onClick={() => setActiveSection(link.name)}
+                            onClick={() => {
+                                setActiveSection(link.name)
+                                setLastClick(Date.now());
+                            }}
                         >
                             {link.name}
                             {link.name === activeSection && 
