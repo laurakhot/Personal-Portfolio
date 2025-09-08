@@ -4,6 +4,7 @@ import About from "@/components/about";
 import Intro from "@/components/intro";
 import SectionDivider from "@/components/section-divider";
 import Projects from "@/components/projects";
+import Skills from "@/components/skills";
 
 // all imported components in global page.tsx should be server
 // can have client components inside server components (subcomponents)
@@ -18,6 +19,7 @@ export default function Home() {
       <SectionDivider/>
       <About/>
       <Projects/>
+      <Skills/>
     </main>
   );
 }
