@@ -3,8 +3,7 @@ import React from 'react'
 import SectionHeading from './section-heading'
 import { skillsData } from '@/lib/data'
 import { useSectionInView } from '@/lib/hooks';
-import { animate, motion } from 'framer-motion';
-import { once } from 'events';
+import { motion } from 'framer-motion';
 
 const fadeInVariant = {
     initial: { opacity: 0, y: 100 }, // starting 100 pixels lower
