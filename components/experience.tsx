@@ -7,7 +7,7 @@ import { experiencesData } from '@/lib/data';
 
 export default function Experience() {
   return (
-    <section id="experience">
+    <section id="experience" className="w-full max-w-screen-lg mx-auto px-4">
         <SectionHeading>My Experience</SectionHeading>
         <VerticalTimeline>
             {experiencesData.map((val, index) => (
@@ -17,14 +17,17 @@ export default function Experience() {
                             boxShadow: "none", 
                             border: "1px solid rgba(0, 0, 0, 0.1)", 
                             textAlign: "left",
-                            padding: "1.3rem 2rem"}}
+                            }}
                         contentArrowStyle={{ borderRight: '0.4rem solid #9ca3af' }}
+                        date={val.date}
+                        icon={val.icon}
+                        iconStyle={{ background: "white", fontSize: "1.5rem" }}
                     >
                         
                     {/* <h3 className="vertical-timeline-element-title">{val.title}</h3> */}
 
-                        <h3>{val.title}</h3>
-                        <p>{val.location}</p>
+                        <h3 className="font-semibold capitalize">{val.title}</h3>
+                        <p className="font-normal !mt-0">{val.location}</p>
                         <p>{val.description}</p>
                     </VerticalTimelineElement>
                 </React.Fragment>

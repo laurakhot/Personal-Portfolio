@@ -23,6 +23,7 @@ export default function Intro() {
                         type: "tween", 
                         duration: 0.2,
                     }}
+                    whileHover={{ scale: 1.1 }} 
                 >
                     <Image 
                         src="/intro.jpg" 
@@ -58,6 +59,7 @@ export default function Intro() {
             initial={{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
         >
+            {/* <span className="font-bold">Laura Khotemlyansky</span> */}
             <span className="font-bold">
                 Hello, I'm Ricardo.</span> I'm a{" "}
                 <span className="font-bold">full-stack developer</span> with{" "}

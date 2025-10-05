@@ -38,7 +38,7 @@ export const experiencesData = [
     title: "Internship",
     location: "Miami, FL",
     description:
-      "",
+      "I was an intern at a tech startup, where I contributed to front-end development and gained practical experience in a collaborative environment.",
     icon: React.createElement(LuGraduationCap), // using creat element since can't use jsx components in ts file
     date: "",
   },
@@ -46,7 +46,7 @@ export const experiencesData = [
     title: "TA",
     location: "Orlando, FL",
     description:
-      "",
+      "I was a teaching assistant for an introductory programming course, helping students with assignments and clarifying concepts.",
     icon: React.createElement(CgWorkAlt),
     date: "2019 - 2021",
   },
@@ -54,7 +54,7 @@ export const experiencesData = [
     title: "Full-Stack Developer",
     location: "Houston, TX",
     description:
-      "",
+      "I was a full-stack developer at a startup, where I worked on building and maintaining web applications using modern technologies.",
     icon: React.createElement(FaReact),
     date: "2021 - present",
   },
