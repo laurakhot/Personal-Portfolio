@@ -7,7 +7,7 @@ import ProjectCard from './projectCard'
 import { useSectionInView } from '@/lib/hooks';
 
 export default function Projects() {
-      const { ref } = useSectionInView("Projects", 0.5);
+    const { ref } = useSectionInView("Projects", 0.5);
       // hook uses client side features, so this component must be a client component
   
   return (

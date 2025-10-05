@@ -13,8 +13,8 @@ export default function ProjectCard({title, description, tags, imageUrl } : Proj
     target: ref,
     offset: ["0 1", "1.33 1"], // bottom of viewport crosses top of target animation starts, stop when bottom of viewport went 33% beyond end of project  
   });
-  const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]) // scale from 0.5 instead of 0
- const scaleOpacity = useTransform(scrollYProgress, [0, 1], [0.8, 1]) // scale from 0.5 instead of 0
+   const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]) // scale from 0.5 instead of 0
+   const scaleOpacity = useTransform(scrollYProgress, [0, 1], [0.8, 1]) // scale from 0.5 instead of 0
 
   return (
     <motion.div

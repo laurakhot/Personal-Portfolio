@@ -9,7 +9,7 @@ export default function Experience() {
   return (
     <section id="experience" className="w-full max-w-screen-lg mx-auto px-4">
         <SectionHeading>My Experience</SectionHeading>
-        <VerticalTimeline>
+        <VerticalTimeline lineColor="#f3f4f6">
             {experiencesData.map((val, index) => (
                 <React.Fragment key={index}>
                     <VerticalTimelineElement
@@ -23,12 +23,9 @@ export default function Experience() {
                         icon={val.icon}
                         iconStyle={{ background: "white", fontSize: "1.5rem" }}
                     >
-                        
-                    {/* <h3 className="vertical-timeline-element-title">{val.title}</h3> */}
-
                         <h3 className="font-semibold capitalize">{val.title}</h3>
                         <p className="font-normal !mt-0">{val.location}</p>
-                        <p>{val.description}</p>
+                        <p className="!mt-1 !font-normal text-gray-700">{val.description}</p>
                     </VerticalTimelineElement>
                 </React.Fragment>
             ))}
