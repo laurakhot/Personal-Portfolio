@@ -5,6 +5,8 @@ import { LuGraduationCap } from "react-icons/lu";
 // import corpcommentImg from "@/public/corpcomment.png";
 // import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
+import techglossaryImg from "@/public/TechGlossary.png";
+
 
 export const links = [
   {
@@ -62,11 +64,20 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "TechGlossary",
+    description:
+      "A tech term and tool search engine built using Flask and BM25 algorithm for information retrieval.",
+    tags: ["Flask", "BM25", "Pandas", "Pyterrier"],
+    imageUrl: techglossaryImg,
+    projectUrl: "https://github.com/laurakhot/TechGlossary",
+  },
+  {
     title: "RxPert",
     description:
       "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
     tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
     imageUrl: wordanalyticsImg,
+    projectUrl: "https://github.com/laurakhot/TechGlossary",
   },
   {
     title: "!Graduated",
@@ -74,6 +85,7 @@ export const projectsData = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
     imageUrl: wordanalyticsImg,
+    projectUrl: "https://github.com/laurakhot/TechGlossary",
   },
   {
     title: "Eat Together",
@@ -81,6 +93,7 @@ export const projectsData = [
       "ALorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
     imageUrl: wordanalyticsImg,
+    projectUrl: "https://github.com/laurakhot/TechGlossary",
   },
   {
     title: "Roomie",
@@ -88,6 +101,7 @@ export const projectsData = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
     imageUrl: wordanalyticsImg,
+    projectUrl: "https://github.com/laurakhot/TechGlossary",
   },
 ] as const;
 
