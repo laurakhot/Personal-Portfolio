@@ -6,6 +6,7 @@ import { LuGraduationCap } from "react-icons/lu";
 // import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 import techglossaryImg from "@/public/TechGlossary.png";
+import roomie from "@/public/roomie.png";
 
 
 export const links = [
@@ -37,13 +38,13 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Internship",
-    location: "Miami, FL",
+    title: "Software Engineering Intern",
+    location: "Issaquah, WA",
     description:
       "I was an intern at a tech startup, where I contributed to front-end development and gained practical experience in a collaborative environment.",
-    icon: React.createElement(LuGraduationCap), // using creat element since can't use jsx components in ts file
-    date: "",
-  },
+    icon: React.createElement(CgWorkAlt), // using creat element since can't use jsx components in ts file
+    date: "Jun 2025 - Sep 2025",
+    },
   {
     title: "TA",
     location: "Orlando, FL",
@@ -99,9 +100,9 @@ export const projectsData = [
     title: "Roomie",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
-    projectUrl: "https://github.com/laurakhot/TechGlossary",
+    tags: ["Swift", "UIKit", "Firebase", "MessageUI"],
+    imageUrl: roomie,
+    projectUrl: "https://github.com/laurakhot/Roomie-UIKit",
   },
 ] as const;
 
