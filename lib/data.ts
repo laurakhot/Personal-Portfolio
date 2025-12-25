@@ -2,11 +2,18 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
+import { GiMicroscope } from "react-icons/gi";
+import { FaRegClipboard } from "react-icons/fa";
+import { FaUserTie } from "react-icons/fa";
+
+
+
 // import corpcommentImg from "@/public/corpcomment.png";
 // import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 import techglossaryImg from "@/public/TechGlossary.png";
 import roomie from "@/public/roomie.png";
+import graduated from "@/public/graduated_expanded.png";
 
 
 export const links = [
@@ -38,6 +45,14 @@ export const links = [
 
 export const experiencesData = [
   {
+    title: "Club President",
+    location: "Issaquah, WA",
+    description:
+      "I was an intern at a tech startup, where I contributed to front-end development and gained practical experience in a collaborative environment.",
+    icon: React.createElement(FaUserTie), // using creat element since can't use jsx components in ts file
+    date: "Jun 2025 - Sep 2025",
+    },
+  {
     title: "Software Engineering Intern",
     location: "Issaquah, WA",
     description:
@@ -60,6 +75,14 @@ export const experiencesData = [
       "I was a full-stack developer at a startup, where I worked on building and maintaining web applications using modern technologies.",
     icon: React.createElement(FaReact),
     date: "2021 - present",
+  },
+  {
+    title: "Research Assistant",
+    location: "Houston, TX",
+    description:
+      "I was a full-stack developer at a startup, where I worked on building and maintaining web applications using modern technologies.",
+    icon: React.createElement(GiMicroscope),
+    date: "Jun 2023 - Sep 2023",
   },
 ] as const;
 
@@ -85,7 +108,7 @@ export const projectsData = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: wordanalyticsImg,
+    imageUrl: graduated,
     projectUrl: "https://github.com/laurakhot/TechGlossary",
   },
   {
