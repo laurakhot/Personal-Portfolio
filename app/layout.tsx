@@ -23,7 +23,7 @@ const oswald = Oswald({ weight: ["200"], subsets: ["latin"] });
 // });
 
 export const metadata: Metadata = {
-  title: "Laura | Personal Portfolio",
+  title: "Laura | Portfolio",
   keywords: ["Laura", "Portfolio", "Software Developer", "Next.js"],
   description: "Laura is a full stack web and app developer",
   icons: {
