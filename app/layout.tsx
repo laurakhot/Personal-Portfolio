@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   keywords: ["Laura", "Portfolio", "Software Developer", "Next.js"],
   description: "Laura is a full stack web and app developer",
   icons: {
-    icon: "/stars-purple.svg", // Path to your SVG favicon in the public folder
+    icon: "/initials.svg", // Path to your SVG favicon in the public folder
   },
 };
 
