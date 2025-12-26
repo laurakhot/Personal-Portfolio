@@ -19,33 +19,33 @@ export default function About() {
       id="about"
     >
       <SectionHeading>About Me</SectionHeading>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8">
-  {/* Fact 1 */}
-  <div className="flex items-center gap-4 p-4 border border-gray-300 rounded-lg shadow-md bg-gray-100 hover:shadow-lg hover:scale-105 transition-transform duration-300">
-    <FaGraduationCap className="text-4xl text-purple-500" />
-    <p className="text-left">B.S. Informatics @ University of Washington</p>
-  </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-10">
+        {/* Fact 1 */}
+        <div className="flex items-center gap-4 p-4 border border-gray-300 rounded-lg shadow-md bg-gray-100 hover:shadow-lg hover:scale-105 transition-transform duration-300">
+          <FaGraduationCap className="text-4xl text-purple-500" />
+          <p className="text-left">B.S. Informatics @ University of Washington</p>
+        </div>
 
-  {/* Fact 3 */}
-  <div className="flex items-center gap-4 p-4 border border-gray-300 rounded-lg shadow-md bg-gray-100 hover:shadow-lg hover:scale-105 transition-transform duration-300">
-    <FaCode className="text-4xl text-pink-500" />
-    <p className="text-left">Passionate about full-stack development</p>
-  </div>
+        {/* Fact 3 */}
+        <div className="flex items-center gap-4 p-4 border border-gray-300 rounded-lg shadow-md bg-gray-100 hover:shadow-lg hover:scale-105 transition-transform duration-300">
+          <FaCode className="text-4xl text-pink-500" />
+          <p className="text-left">Passionate about full-stack development</p>
+        </div>
 
-  {/* Fact 2 */}
-  <div className="flex items-center gap-4 p-4 border border-gray-300 rounded-lg shadow-md bg-gray-100 hover:shadow-lg hover:scale-105 transition-transform duration-300">
-    <FaCoffee className="text-4xl text-pink-500" />
-    <p className="text-left">Extreme coffee enthusiast</p>
-  </div>
+        {/* Fact 2 */}
+        <div className="flex items-center gap-4 p-4 border border-gray-300 rounded-lg shadow-md bg-gray-100 hover:shadow-lg hover:scale-105 transition-transform duration-300">
+          <FaCoffee className="text-4xl text-pink-500" />
+          <p className="text-left">Extreme coffee enthusiast</p>
+        </div>
 
-  
+        
 
-  {/* Fact 4 */}
-  <div className="flex items-center gap-4 p-4 border border-gray-300 rounded-lg shadow-md bg-gray-100 hover:shadow-lg hover:scale-105 transition-transform duration-300">
-    <FaMusic className="text-4xl text-purple-500" />
-    <p className="text-left">Music connoisseur</p>
-  </div>
-</div>
+        {/* Fact 4 */}
+        <div className="flex items-center gap-4 p-4 border border-gray-300 rounded-lg shadow-md bg-gray-100 hover:shadow-lg hover:scale-105 transition-transform duration-300">
+          <FaMusic className="text-4xl text-purple-500" />
+          <p className="text-left">Music connoisseur</p>
+        </div>
+      </div>
     </motion.section>
   );
 }
