@@ -9,6 +9,7 @@ import { HiDownload } from 'react-icons/hi';
 import { FaGithubSquare } from 'react-icons/fa';
 import { useSectionInView } from '@/lib/hooks';
 import { useActiveSectionContext } from '@/context/active-section-context';
+import Typewriter from 'typewriter-effect';
 
 
 export default function Intro() {
@@ -57,16 +58,22 @@ export default function Intro() {
                 </motion.span>
             </div>
         </div>
-        <motion.h1 
-            className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
-            initial={{ y: 100, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
+
+       
+        <motion.h1
+        className="mb-10 mt-7 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl font-bold"
+        initial={{ y: 100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
         >
-            {/* <span className="font-bold">Laura Khotemlyansky</span> */}
-            <span className="font-bold">
-                Hello, I'm Laura.</span> I'm a{" "}
-                <span className="font-bold">full-stack web and app developer.
-            </span>
+        <Typewriter
+            options={{
+            strings: ["Laura Khotemlyansky", "Full-stack software engineer"],
+            autoStart: true,
+            loop: true,
+            delay: 100, // typing speed in milliseconds
+            deleteSpeed: 80, // deletion speed
+            }}
+        />
         </motion.h1>
 
         <motion.div 
