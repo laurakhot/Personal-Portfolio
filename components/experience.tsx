@@ -30,7 +30,7 @@ export default function Experience() {
                         iconStyle={{ background: "white", fontSize: "1.5rem" }}
                     >
                         <h3 className="font-semibold capitalize">{val.title}</h3>
-                        <p className="font-normal !mt-0">{val.location}</p>
+                        <p className="font-normal !mt-0">{val.company}</p>
                         <p className="!mt-1 !font-normal text-gray-700">{val.description}</p>
                     </VerticalTimelineElement>
                 </React.Fragment>
