@@ -21,9 +21,9 @@ export default function Home() {
       <Intro/>
       <SectionDivider/>
       <About/>
+      <Skills/>
       {/* <Education/> */}
       <Projects/>
-      <Skills/>
       <Experience/>
       <Contact/>
     </main>

@@ -14,6 +14,8 @@ import wordanalyticsImg from "@/public/wordanalytics.png";
 import techglossaryImg from "@/public/TechGlossary.png";
 import roomie from "@/public/roomie.png";
 import graduated from "@/public/graduated_expanded.png";
+import eatTogether from "@/public/big_logo.png";
+import leetcare from "@/public/leetcare.png";
 
 
 export const links = [
@@ -52,6 +54,7 @@ export const experiencesData = [
   {
     title: "Club President",
     location: "Issaquah, WA",
+    company: "Web Impact at UW",
     description:
       "I was an intern at a tech startup, where I contributed to front-end development and gained practical experience in a collaborative environment.",
     icon: React.createElement(FaUserTie), // using creat element since can't use jsx components in ts file
@@ -60,22 +63,25 @@ export const experiencesData = [
   {
     title: "Software Engineering Intern",
     location: "Issaquah, WA",
+    company: "Costco IT",
     description:
       "I was an intern at a tech startup, where I contributed to front-end development and gained practical experience in a collaborative environment.",
     icon: React.createElement(CgWorkAlt), // using creat element since can't use jsx components in ts file
     date: "Jun 2025 - Sep 2025",
     },
   {
-    title: "TA",
-    location: "Orlando, FL",
+    title: "Undergraduate Teaching Assistant",
+    location: "Seattle, WA",
+    company: "Paul G. Allen School of Computer Science & Engineering",
     description:
       "I was a teaching assistant for an introductory programming course, helping students with assignments and clarifying concepts.",
     icon: React.createElement(CgWorkAlt),
     date: "2019 - 2021",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Elementary Coding Instructor",
+    location: "Seattle, WA",
+    company: "Coding with Kids",
     description:
       "I was a full-stack developer at a startup, where I worked on building and maintaining web applications using modern technologies.",
     icon: React.createElement(FaReact),
@@ -83,7 +89,7 @@ export const experiencesData = [
   },
   {
     title: "Research Assistant",
-    location: "Houston, TX",
+    location: "Seattle, WA",
     description:
       "I was a full-stack developer at a startup, where I worked on building and maintaining web applications using modern technologies.",
     icon: React.createElement(GiMicroscope),
@@ -95,39 +101,39 @@ export const projectsData = [
   {
     title: "TechGlossary",
     description:
-      "A tech term and tool search engine built using Flask and BM25 algorithm for information retrieval.",
+      "A search engine for technical terms and developer tools built using Flask and BM25 algorithm for information retrieval.",
     tags: ["Flask", "BM25", "Pandas", "Pyterrier"],
     imageUrl: techglossaryImg,
     projectUrl: "https://github.com/laurakhot/TechGlossary",
   },
   {
-    title: "RxPert",
+    title: "LeetCare",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: wordanalyticsImg,
-    projectUrl: "https://github.com/laurakhot/TechGlossary",
+      "A Pharmacy patient stimulator with AI-driven text and voice capabilites and instantaneous feedback aligned with UW School of Pharmacy standards.",
+    tags: [ "Next.js", "MongoDB", "Prisma", "ElevenLabs", "OpenAI"],
+    imageUrl: leetcare,
+    projectUrl: "https://leetcare.com/",
   },
   {
     title: "!Graduated",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      "A centralized UW course discovery tool with features like course search, saving, reviews, and filtering, integrated with UW Enterprise Web Services.",
+    tags: ["Express", "Azure Auth", "MongoDB", "EWS API"],
     imageUrl: graduated,
-    projectUrl: "https://github.com/laurakhot/TechGlossary",
+    projectUrl: "https://github.com/laurakhot/Graduated-ExpressJS",
   },
   {
     title: "Eat Together",
     description:
-      "ALorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
-    projectUrl: "https://github.com/laurakhot/TechGlossary",
+      "A meal-sharing mobile app that connects 550+ users for planned shared dining experiences.",
+    tags: ["React Native", "Expo", "Firebase"],
+    imageUrl: eatTogether,
+    projectUrl: "https://github.com/eat-together-team/eat-together",
   },
   {
     title: "Roomie",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "A household management iOS app to streamline chores, expenses, and communication among roommates. Supports native messaging, push notifications, and shared household creation via join code.",
     tags: ["Swift", "UIKit", "Firebase", "MessageUI"],
     imageUrl: roomie,
     projectUrl: "https://github.com/laurakhot/Roomie-UIKit",
