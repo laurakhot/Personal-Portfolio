@@ -52,7 +52,7 @@ export const links = [
 export const experiencesData = [
   {
     title: "Club President",
-    location: "Issaquah, WA",
+    location: "Seattle, WA",
     company: "Web Impact at UW",
     description:
       "I was an intern at a tech startup, where I contributed to front-end development and gained practical experience in a collaborative environment.",
@@ -89,6 +89,7 @@ export const experiencesData = [
   {
     title: "Research Assistant",
     location: "Seattle, WA",
+    company: "Wendy Thomas Lab - UW Bioengineering",
     description:
       "I was a full-stack developer at a startup, where I worked on building and maintaining web applications using modern technologies.",
     icon: React.createElement(GiMicroscope),

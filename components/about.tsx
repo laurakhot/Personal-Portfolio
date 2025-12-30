@@ -7,7 +7,7 @@ import { useSectionInView } from '@/lib/hooks';
 import { FaGraduationCap, FaCoffee, FaCode, FaLaptopCode, FaMusic } from 'react-icons/fa';
 
 export default function About() {
-  const { ref } = useSectionInView("About");
+  const { ref } = useSectionInView("About", 0.5);
 
   return (
     <motion.section

@@ -7,11 +7,11 @@ import { experiencesData } from '@/lib/data';
 import { useSectionInView } from '@/lib/hooks';
 
 export default function Experience() {
-  const { ref } = useSectionInView("Experience");
-    
+  const { ref } = useSectionInView("Experience", 0.3);
+
   return (
-    <section id="experience" 
-    className="w-full max-w-screen-lg mx-auto px-4 mb-28 sm:mb-40"
+    <section id="experience"
+    className="scroll-mt-28 w-full max-w-screen-lg mx-auto px-4 mb-28 sm:mb-40"
     ref={ref}
     >
         <SectionHeading>My Experience</SectionHeading>

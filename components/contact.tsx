@@ -6,13 +6,13 @@ import { motion } from 'framer-motion';
 import { useSectionInView } from '@/lib/hooks';
 
 export default function Contact() {
-    const { ref } = useSectionInView("Contact");
-  
+    const { ref } = useSectionInView("Contact", 0.5);
+
   return (
-    <motion.section 
+    <motion.section
       ref={ref}
-      id="contact" 
-      className="text-center mb-20 sm:mb-28 w-[min(100%,38rem)]" 
+      id="contact"
+      className="scroll-mt-28 text-center mb-20 sm:mb-28 w-[min(100%,38rem)]" 
       initial={{ opacity: 0 }} 
       whileInView={{opacity: 1}} 
       transition={{ duration: 1 }}

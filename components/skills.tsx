@@ -21,7 +21,7 @@ const categoryColors: { [key: string]: string } = {
 };
 
 export default function Skills() {
-    const { ref } = useSectionInView("Skills");
+    const { ref } = useSectionInView("Skills", 0.5);
 
     let skillIndex = 0;
 
