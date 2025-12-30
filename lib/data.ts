@@ -27,6 +27,10 @@ export const links = [
     name: "About",
     hash: "#about",
   },
+  {
+    name: "Skills",
+    hash: "#skills",
+  },
   // {
   //   name: "Education",
   //   hash: "#education",
@@ -34,11 +38,6 @@ export const links = [
   {
     name: "Projects",
     hash: "#projects",
-  },
- 
-  {
-    name: "Skills",
-    hash: "#skills",
   },
   {
     name: "Experience",
@@ -141,23 +140,28 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
-  "Framer Motion",
+  {
+    category: "Frontend",
+    skills: ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Next.js", "Tailwind", "Redux", "Framer Motion"]
+  },
+  {
+    category: "Backend",
+    skills: ["Node.js", "Express", "Python", "Django", "GraphQL", "Apollo", "Prisma"]
+  },
+  {
+    category: "Databases",
+    skills: ["MongoDB", "PostgreSQL", "Firebase"]
+  },
+  {
+    category: "Testing",
+    skills: ["Jest", "React Testing Library", "Cypress"]
+  },
+  {
+    category: "AI",
+    skills: ["OpenAI", "LangChain", "RAG", "Prompt Engineering"]
+  },
+  {
+    category: "Cloud",
+    skills: ["Git", "Docker", "AWS"]
+  }
 ] as const;

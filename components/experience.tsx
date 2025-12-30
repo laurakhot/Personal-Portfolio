@@ -19,9 +19,9 @@ export default function Experience() {
             {experiencesData.map((val, index) => (
                 <React.Fragment key={index}>
                     <VerticalTimelineElement
-                        contentStyle={{ background: '#f3f4f6', 
-                            boxShadow: "none", 
-                            border: "1px solid rgba(0, 0, 0, 0.1)", 
+                        contentStyle={{ background: '#f3f4f6',
+                            boxShadow: "none",
+                            border: "1px solid rgba(0, 0, 0, 0.1)",
                             textAlign: "left",
                             }}
                         contentArrowStyle={{ borderRight: '0.4rem solid #9ca3af' }}
@@ -29,9 +29,10 @@ export default function Experience() {
                         icon={val.icon}
                         iconStyle={{ background: "white", fontSize: "1.5rem" }}
                     >
-                        <h3 className="font-semibold capitalize">{val.title}</h3>
-                        <p className="font-normal !mt-0">{val.company}</p>
-                        <p className="!mt-1 !font-normal text-gray-700">{val.description}</p>
+                        <h3 className="text-xl font-bold text-gray-900 capitalize">{val.title}</h3>
+                        <p className="text-base font-semibold text-gray-700 !mt-1">{val.company}</p>
+                        <p className="text-sm text-gray-500 !mt-0.5 italic">{val.location}</p>
+                        <p className="!mt-3 !font-normal text-gray-600 leading-relaxed">{val.description}</p>
                     </VerticalTimelineElement>
                 </React.Fragment>
             ))}

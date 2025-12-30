@@ -11,29 +11,44 @@ const fadeInVariant = {
     // wrap object in parenthesis to not write return keyword
 }
 
+const categoryColors: { [key: string]: string } = {
+    "Frontend": "border-blue-400",
+    "Backend": "border-green-400",
+    "Databases": "border-purple-400",
+    "Testing": "border-orange-400",
+    "AI": "border-pink-400",
+    "Cloud": "border-cyan-400",
+};
+
 export default function Skills() {
     const { ref } = useSectionInView("Skills");
+
+    let skillIndex = 0;
+
     return (
         <section id="skills" ref={ref} className="mb-27 max-w-[53rem] scroll-mt-28 text-center sm:mb-40">
             <SectionHeading>My Skills</SectionHeading>
             <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
-                {
-                    skillsData.map((skill, index) => (
-                        <motion.li 
-                            key={index} 
-                            className="bg-white border border-black/[0.1] rounded-xl px-5 py-3"
-                            variants={fadeInVariant}
-                            initial="initial"
-                            whileInView="animate" // animation triggers when in view
-                            viewport={{
-                                once: true, // animate only once
-                            }}
-                            custom={index} // pass index as custom prop for staggered delay
-                        >
-                            {skill}
-                        </motion.li>
-                    ))
-                }
+                {skillsData.map((category) =>
+                    category.skills.map((skill) => {
+                        const currentIndex = skillIndex++;
+                        return (
+                            <motion.li
+                                key={`${category.category}-${skill}`}
+                                className={`bg-white ${categoryColors[category.category]} border rounded-xl px-5 py-3`}
+                                variants={fadeInVariant}
+                                initial="initial"
+                                whileInView="animate"
+                                viewport={{
+                                    once: true,
+                                }}
+                                custom={currentIndex}
+                            >
+                                {skill}
+                            </motion.li>
+                        );
+                    })
+                )}
             </ul>
         </section>
     )
