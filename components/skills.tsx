@@ -11,15 +11,6 @@ const fadeInVariant = {
     // wrap object in parenthesis to not write return keyword
 }
 
-const categoryColors: { [key: string]: string } = {
-    "Frontend": "border-blue-400",
-    "Backend": "border-green-400",
-    "Databases": "border-purple-400",
-    "Testing": "border-orange-400",
-    "AI": "border-pink-400",
-    "Cloud": "border-cyan-400",
-};
-
 export default function Skills() {
     const { ref } = useSectionInView("Skills", 0.5);
 
@@ -35,7 +26,7 @@ export default function Skills() {
                         return (
                             <motion.li
                                 key={`${category.category}-${skill}`}
-                                className={`bg-white ${categoryColors[category.category]} border rounded-xl px-5 py-3`}
+                                className={`bg-white ${category.color} border rounded-xl px-5 py-3`}
                                 variants={fadeInVariant}
                                 initial="initial"
                                 whileInView="animate"

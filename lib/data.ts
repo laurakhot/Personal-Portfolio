@@ -142,27 +142,33 @@ export const projectsData = [
 
 export const skillsData = [
   {
-    category: "Frontend",
-    skills: ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Next.js", "Tailwind", "Redux", "Framer Motion"]
+    category: "Languages",
+    color: "border-blue-400",
+    skills: ["Java", "Python", "JavaScript", "TypeScript", "SQL", "Swift", "HTML", "CSS", "R"]
   },
   {
-    category: "Backend",
-    skills: ["Node.js", "Express", "Python", "Django", "GraphQL", "Apollo", "Prisma"]
+    category: "Frameworks",
+    color: "border-green-400",
+    skills: ["React", "NodeJS", "NextJS", "ExpressJS", "React Native", "Framer Motion", "TailwindCSS"]
   },
   {
     category: "Databases",
-    skills: ["MongoDB", "PostgreSQL", "Firebase"]
+    color: "border-purple-400",
+    skills: ["MongoDB", "PostgreSQL", "Firebase", "Prisma"]
   },
   {
     category: "Testing",
-    skills: ["Jest", "React Testing Library", "Cypress"]
+    color: "border-orange-400",
+    skills: ["Jest", "Selenium", "Playwright", "XCTest", "JUnit"]
   },
   {
     category: "AI",
+    color: "border-pink-400",
     skills: ["OpenAI", "LangChain", "RAG", "Prompt Engineering"]
   },
   {
     category: "Cloud",
+    color: "border-cyan-400",
     skills: ["Git", "Docker", "AWS"]
   }
 ] as const;
