@@ -5,6 +5,8 @@ import { LuGraduationCap } from "react-icons/lu";
 import { GiMicroscope } from "react-icons/gi";
 import { FaRegClipboard } from "react-icons/fa";
 import { FaUserTie } from "react-icons/fa";
+import { FaChalkboardTeacher } from "react-icons/fa";
+
 
 
 
@@ -55,7 +57,7 @@ export const experiencesData = [
     location: "Seattle, WA",
     company: "Web Impact at UW",
     description:
-      "I was an intern at a tech startup, where I contributed to front-end development and gained practical experience in a collaborative environment.",
+      "Lead a 70+ member student organization developing web applications for local businesses, overseeing workshop programming, infrastructure improvements, partnerships, and recruitment while collaborating with officers to deliver industry-level solutions.",
     icon: React.createElement(FaUserTie), // using creat element since can't use jsx components in ts file
     date: "Jun 2025 - Sep 2025",
     },
@@ -64,7 +66,7 @@ export const experiencesData = [
     location: "Issaquah, WA",
     company: "Costco IT",
     description:
-      "I was an intern at a tech startup, where I contributed to front-end development and gained practical experience in a collaborative environment.",
+      "Supported the deployment of a new search service to A/B testing with 10% of Costco.com traffic. Built Dataflow pipelines processing over 3.5+ million catalog products to enhance search relevance.",
     icon: React.createElement(CgWorkAlt), // using creat element since can't use jsx components in ts file
     date: "Jun 2025 - Sep 2025",
     },
@@ -73,8 +75,8 @@ export const experiencesData = [
     location: "Seattle, WA",
     company: "Paul G. Allen School of Computer Science & Engineering",
     description:
-      "I was a teaching assistant for an introductory programming course, helping students with assignments and clarifying concepts.",
-    icon: React.createElement(CgWorkAlt),
+      "Teaching data structures & algorithms (previously Java programming). Lead weekly sections and office hours, grade and provide feedback on assignments, develop exam questions and rubrics, and deliver guest lectures to 150+ students.",
+    icon: React.createElement(FaChalkboardTeacher),
     date: "2019 - 2021",
   },
   {
@@ -82,8 +84,8 @@ export const experiencesData = [
     location: "Seattle, WA",
     company: "Coding with Kids",
     description:
-      "I was a full-stack developer at a startup, where I worked on building and maintaining web applications using modern technologies.",
-    icon: React.createElement(FaReact),
+      "Taught weekly game development & robotics classes to elementary students with Scratch and Edison Robots, fostering interest in computer science.",
+    icon: React.createElement(FaChalkboardTeacher),
     date: "2021 - present",
   },
   {
@@ -91,7 +93,7 @@ export const experiencesData = [
     location: "Seattle, WA",
     company: "Wendy Thomas Lab - UW Bioengineering",
     description:
-      "I was a full-stack developer at a startup, where I worked on building and maintaining web applications using modern technologies.",
+      "Utilized LIS software to analyze antibody reactions to COVID-19 variants. Independently extracted over 100 cell samples.",
     icon: React.createElement(GiMicroscope),
     date: "Jun 2023 - Sep 2023",
   },
@@ -154,7 +156,7 @@ export const skillsData = [
   {
     category: "Databases",
     color: "border-purple-400",
-    skills: ["MongoDB", "PostgreSQL", "Firebase", "Prisma"]
+    skills: ["MongoDB", "SQL Server", "Firebase", "Prisma"]
   },
   {
     category: "Testing",
@@ -164,11 +166,16 @@ export const skillsData = [
   {
     category: "AI",
     color: "border-pink-400",
-    skills: ["OpenAI", "LangChain", "RAG", "Prompt Engineering"]
+    skills: ["OpenAI", "Claude Code", "ElevenLabs"]
   },
   {
     category: "Cloud",
     color: "border-cyan-400",
-    skills: ["Git", "Docker", "AWS"]
+    skills: ["GCP", "Azure", "Databricks"]
+  }, 
+  {
+    category: "Tools",
+    color: "border-yellow-400",
+    skills: ["Git", "Docker", "CI/CD", "Agile"]
   }
 ] as const;
