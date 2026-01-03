@@ -5,6 +5,8 @@ import SectionHeading from './section-heading';
 import { motion } from 'framer-motion';
 import { useSectionInView } from '@/lib/hooks';
 import { FaGraduationCap, FaCoffee, FaCode, FaLaptopCode, FaMusic } from 'react-icons/fa';
+import { GrYoga } from "react-icons/gr";
+
 
 export default function About() {
   const { ref } = useSectionInView("About", 0.5);
@@ -23,7 +25,7 @@ export default function About() {
         {/* Fact 1 */}
         <div className="flex items-center gap-4 p-4 border border-gray-300 rounded-lg shadow-md bg-gray-100 hover:shadow-lg hover:scale-105 transition-transform duration-300">
           <FaGraduationCap className="text-4xl text-purple-500" />
-          <p className="text-left">B.S. Informatics @ University of Washington</p>
+          <p className="text-left">B.S. Informatics @ University of Washington (2026)</p>
         </div>
 
         {/* Fact 3 */}
@@ -35,15 +37,15 @@ export default function About() {
         {/* Fact 2 */}
         <div className="flex items-center gap-4 p-4 border border-gray-300 rounded-lg shadow-md bg-gray-100 hover:shadow-lg hover:scale-105 transition-transform duration-300">
           <FaCoffee className="text-4xl text-pink-500" />
-          <p className="text-left">Extreme coffee enthusiast</p>
+          <p className="text-left">Coffee lover</p>
         </div>
 
         
 
         {/* Fact 4 */}
         <div className="flex items-center gap-4 p-4 border border-gray-300 rounded-lg shadow-md bg-gray-100 hover:shadow-lg hover:scale-105 transition-transform duration-300">
-          <FaMusic className="text-4xl text-purple-500" />
-          <p className="text-left">Music connoisseur</p>
+          <GrYoga className="text-4xl text-purple-500" />
+          <p className="text-left">Hot yoga enjoyer</p>
         </div>
       </div>
     </motion.section>
