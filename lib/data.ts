@@ -59,7 +59,7 @@ export const experiencesData = [
     description:
       "Lead a 70+ member student organization developing web applications for local businesses, overseeing workshop programming, infrastructure improvements, partnerships, and recruitment while collaborating with officers to deliver industry-level solutions.",
     icon: React.createElement(FaUserTie), // using creat element since can't use jsx components in ts file
-    date: "Jun 2025 - Sep 2025",
+    date: "Sep 2025 - present",
     },
   {
     title: "Software Engineering Intern",
@@ -77,7 +77,7 @@ export const experiencesData = [
     description:
       "Teaching data structures & algorithms (previously Java programming). Lead weekly sections and office hours, grade and provide feedback on assignments, develop exam questions and rubrics, and deliver guest lectures to 150+ students.",
     icon: React.createElement(FaChalkboardTeacher),
-    date: "2019 - 2021",
+    date: "Sep 2024 - present",
   },
   {
     title: "Elementary Coding Instructor",
@@ -86,7 +86,7 @@ export const experiencesData = [
     description:
       "Taught weekly game development & robotics classes to elementary students with Scratch and Edison Robots, fostering interest in computer science.",
     icon: React.createElement(FaChalkboardTeacher),
-    date: "2021 - present",
+    date: "Jan 2024 - Jul 2024",
   },
   {
     title: "Research Assistant",
