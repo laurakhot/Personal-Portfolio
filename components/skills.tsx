@@ -19,28 +19,35 @@ export default function Skills() {
     return (
         <section id="skills" ref={ref} className="mb-27 max-w-[53rem] scroll-mt-28 text-center sm:mb-40">
             <SectionHeading>My Skills</SectionHeading>
-            <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
-                {skillsData.map((category) =>
-                    category.skills.map((skill) => {
-                        const currentIndex = skillIndex++;
-                        return (
-                            <motion.li
-                                key={`${category.category}-${skill}`}
-                                className={`bg-white ${category.color} border rounded-xl px-5 py-3`}
-                                variants={fadeInVariant}
-                                initial="initial"
-                                whileInView="animate"
-                                viewport={{
-                                    once: true,
-                                }}
-                                custom={currentIndex}
-                            >
-                                {skill}
-                            </motion.li>
-                        );
-                    })
-                )}
-            </ul>
+            <div className="flex flex-col gap-6">
+                {skillsData.map((category) => (
+                    <div key={category.category}>
+                        <h3 className={`text-sm font-semibold uppercase tracking-wider text-gray-500 mb-3`}>
+                            {category.category}
+                        </h3>
+                        <ul className="flex flex-nowrap justify-center gap-2 text-lg text-gray-800">
+                            {category.skills.map((skill) => {
+                                const currentIndex = skillIndex++;
+                                return (
+                                    <motion.li
+                                        key={`${category.category}-${skill}`}
+                                        className={`bg-white ${category.color} border rounded-xl px-5 py-3 whitespace-nowrap`}
+                                        variants={fadeInVariant}
+                                        initial="initial"
+                                        whileInView="animate"
+                                        viewport={{
+                                            once: true,
+                                        }}
+                                        custom={currentIndex}
+                                    >
+                                        {skill}
+                                    </motion.li>
+                                );
+                            })}
+                        </ul>
+                    </div>
+                ))}
+            </div>
         </section>
     )
 }

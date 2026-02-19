@@ -21,6 +21,11 @@ export default function About() {
       id="about"
     >
       <SectionHeading>About Me</SectionHeading>
+      <div className="mt-5 text-center leading-relaxed text-lg text-gray-700 max-w-[45rem] mx-auto">
+        <p>
+          I am a senior at the University of Washington, studying Informatics, examining the intersection of technology and society. I enjoy building thoughtful, user-centered applications and have experience across web and mobile development using tools like Next.js, MongoDB, and Swift. With a background in engineering and teaching, I bring a strong problem-solving mindset and a passion for making technology more accessible and impactful.
+        </p>
+      </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-10">
         {/* Fact 1 */}
         <div className="flex items-center gap-4 p-4 border border-gray-300 rounded-lg shadow-md bg-gray-100 hover:shadow-lg hover:scale-105 transition-transform duration-300">
@@ -48,6 +53,9 @@ export default function About() {
           <p className="text-left">Hot yoga enjoyer</p>
         </div>
       </div>
+
+   
+
     </motion.section>
   );
 }
