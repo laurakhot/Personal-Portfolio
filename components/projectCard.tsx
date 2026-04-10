@@ -5,21 +5,23 @@ import Image from "next/image";
 import { useRef } from "react";
 import { motion, useTransform } from "framer-motion";
 
-type ProjectCardProps = (typeof projectsData)[number];
+type ProjectCardProps = (typeof projectsData)[number] & { imageClassName?: string };
 
-export default function ProjectCard({title, description, tags, imageUrl, projectUrl } : ProjectCardProps) {
+export default function ProjectCard({title, description, tags, imageUrl, imageClassName, projectUrl } : ProjectCardProps) {
   const ref = useRef<HTMLDivElement>(null);
   const {scrollYProgress} = useScroll({
     target: ref,
-    offset: ["0 1", "1.33 1"], // bottom of viewport crosses top of target animation starts, stop when bottom of viewport went 33% beyond end of project  
+    offset: ["0 1", "1.33 1"], // bottom of viewport crosses top of target animation starts, stop when bottom of viewport went 33% beyond end of project
   });
    const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]) // scale from 0.5 instead of 0
    const scaleOpacity = useTransform(scrollYProgress, [0, 1], [0.8, 1]) // scale from 0.5 instead of 0
 
+  const baseImageClass = "absolute top-0 right-0 w-[45%] h-full sm:top-8 sm:-right-40 sm:w-[28.25rem] sm:h-[calc(100%-2rem)] rounded-t-lg shadow-2xl group-even:right-[initial] group-even:left-0 sm:group-even:-left-40 group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 transition group-hover:scale-105 group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2";
+
   return (
-    
+
     <motion.div
-        ref={ref} 
+        ref={ref}
         style={{
             scale: scaleProgress,
             opacity: scaleOpacity,
@@ -43,7 +45,7 @@ export default function ProjectCard({title, description, tags, imageUrl, project
                     src={imageUrl}
                     alt={description}
                     quality={95}
-                    className="absolute top-0 right-0 w-[45%] h-full sm:top-8 sm:-right-40 sm:w-[28.25rem] sm:h-[calc(100%-2rem)] rounded-t-lg shadow-2xl object-cover group-even:right-[initial] group-even:left-0 sm:group-even:-left-40 group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 transition group-hover:scale-105 group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2 "
+                    className={`${baseImageClass} ${imageClassName ?? "object-cover"}`}
                 />
             </section>
         </a>

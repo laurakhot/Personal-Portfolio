@@ -14,6 +14,7 @@ import { FaChalkboardTeacher } from "react-icons/fa";
 // import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 import techglossaryImg from "@/public/TechGlossary.png";
+import aws from "@/public/aws.svg"
 import roomie from "@/public/roomie.png";
 import graduated from "@/public/graduated_expanded.png";
 import eatTogether from "@/public/big_logo.png";
@@ -96,6 +97,15 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+  {
+    title: "Husky Support (Capstone)",
+    description:
+      "This Amazon-sponsored project aims to develop a proactive diagnostic model that identifies the root causes of computer issues, leveraging historical user telemetry data for training.",
+    tags: ["AWS", "SageMaker AI", "TypeScript"],
+    imageUrl: aws,
+    imageClassName: "object-contain p-2 bg-white sm:right-0 sm:top-0 sm:w-[45%] sm:h-full",
+    projectUrl: "",
+  },
   {
     title: "TechGlossary",
     description:
