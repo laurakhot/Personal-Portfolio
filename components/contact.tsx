@@ -51,11 +51,11 @@ export default function Contact() {
 >
 
         <SectionHeading>Contact Me</SectionHeading>
-        <p className="text-center text-gray-700 -mt-5">Reach out to me via email directly at <a href="mailto:khot.laura@gmail.com" className="underline">khot.laura@gmail.com</a> or through this form:</p>
+        <p className="text-center text-gray-700 dark:text-gray-300 -mt-5">Reach out to me via email directly at <a href="mailto:khot.laura@gmail.com" className="underline">khot.laura@gmail.com</a> or through this form:</p>
 
         <form ref={formRef} className="mt-10 flex flex-col" onSubmit={handleSubmit}>
-            <input type="email" name="user_email" required maxLength={500} placeholder="Your email" className="px-4 h-14 rounded-lg borderBlack"/>
-            <textarea name="message" placeholder="Type your message here" required maxLength={500} className="h-52 my-3 rounded-lg borderBlack p-4"/>
+            <input type="email" name="user_email" required maxLength={500} placeholder="Your email" className="px-4 h-14 rounded-lg borderBlack bg-white dark:bg-gray-800 dark:text-gray-100 dark:placeholder-gray-400 outline-none"/>
+            <textarea name="message" placeholder="Type your message here" required maxLength={500} className="h-52 my-3 rounded-lg borderBlack p-4 bg-white dark:bg-gray-800 dark:text-gray-100 dark:placeholder-gray-400 outline-none"/>
             <button
               type="submit"
               disabled={pending}

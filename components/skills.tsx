@@ -22,16 +22,16 @@ export default function Skills() {
             <div className="flex flex-col gap-6">
                 {skillsData.map((category) => (
                     <div key={category.category}>
-                        <h3 className={`text-sm font-semibold uppercase tracking-wider text-gray-500 mb-3`}>
+                        <h3 className={`text-sm font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-3`}>
                             {category.category}
                         </h3>
-                        <ul className="flex flex-nowrap justify-center gap-2 text-lg text-gray-800">
+                        <ul className="flex flex-nowrap justify-center gap-2 text-lg text-gray-800 dark:text-gray-100">
                             {category.skills.map((skill) => {
                                 const currentIndex = skillIndex++;
                                 return (
                                     <motion.li
                                         key={`${category.category}-${skill}`}
-                                        className={`bg-white ${category.color} border rounded-xl px-5 py-3 whitespace-nowrap`}
+                                        className={`group relative bg-white dark:bg-gray-800 ${category.color} border rounded-xl px-5 py-3 whitespace-nowrap cursor-default overflow-hidden`}
                                         variants={fadeInVariant}
                                         initial="initial"
                                         whileInView="animate"
@@ -39,8 +39,16 @@ export default function Skills() {
                                             once: true,
                                         }}
                                         custom={currentIndex}
+                                        whileHover={{
+                                            scale: 1.15,
+                                            transition: { duration: 0.2, ease: "easeOut" },
+                                        }}
                                     >
-                                        {skill}
+                                        <span
+                                            className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-200 rounded-xl"
+                                            style={{ backgroundColor: category.hoverBg }}
+                                        />
+                                        <span className="relative z-10">{skill}</span>
                                     </motion.li>
                                 );
                             })}

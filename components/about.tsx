@@ -28,27 +28,27 @@ export default function About() {
       </div> */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-10">
         {/* Fact 1 */}
-        <div className="flex items-center gap-4 p-4 border border-gray-300 rounded-lg shadow-md bg-gray-100 hover:shadow-lg hover:scale-105 transition-transform duration-300">
+        <div className="flex items-center gap-4 p-4 border border-gray-300 dark:border-gray-700 rounded-lg shadow-md bg-gray-100 dark:bg-gray-800 hover:shadow-lg hover:scale-105 transition-transform duration-300">
           <FaGraduationCap className="text-4xl text-purple-500" />
           <p className="text-left">B.S. Informatics @ University of Washington (2026)</p>
         </div>
 
         {/* Fact 3 */}
-        <div className="flex items-center gap-4 p-4 border border-gray-300 rounded-lg shadow-md bg-gray-100 hover:shadow-lg hover:scale-105 transition-transform duration-300">
+        <div className="flex items-center gap-4 p-4 border border-gray-300 dark:border-gray-700 rounded-lg shadow-md bg-gray-100 dark:bg-gray-800 hover:shadow-lg hover:scale-105 transition-transform duration-300">
           <FaCode className="text-4xl text-pink-500" />
           <p className="text-left">Passionate about full-stack development</p>
         </div>
 
         {/* Fact 2 */}
-        <div className="flex items-center gap-4 p-4 border border-gray-300 rounded-lg shadow-md bg-gray-100 hover:shadow-lg hover:scale-105 transition-transform duration-300">
+        <div className="flex items-center gap-4 p-4 border border-gray-300 dark:border-gray-700 rounded-lg shadow-md bg-gray-100 dark:bg-gray-800 hover:shadow-lg hover:scale-105 transition-transform duration-300">
           <FaCoffee className="text-4xl text-pink-500" />
           <p className="text-left">Coffee lover</p>
         </div>
 
-        
+
 
         {/* Fact 4 */}
-        <div className="flex items-center gap-4 p-4 border border-gray-300 rounded-lg shadow-md bg-gray-100 hover:shadow-lg hover:scale-105 transition-transform duration-300">
+        <div className="flex items-center gap-4 p-4 border border-gray-300 dark:border-gray-700 rounded-lg shadow-md bg-gray-100 dark:bg-gray-800 hover:shadow-lg hover:scale-105 transition-transform duration-300">
           <GrYoga className="text-4xl text-purple-500" />
           <p className="text-left">Hot yoga enjoyer</p>
         </div>

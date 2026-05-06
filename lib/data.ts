@@ -152,36 +152,43 @@ export const skillsData = [
   {
     category: "Languages",
     color: "border-blue-400",
+    hoverBg: "rgba(96, 165, 250, 0.25)",
     skills: ["Java", "Python", "JavaScript", "TypeScript", "SQL", "Swift", "HTML", "CSS", "R"]
   },
   {
     category: "Frameworks",
     color: "border-green-400",
+    hoverBg: "rgba(74, 222, 128, 0.25)",
     skills: ["React", "NodeJS", "NextJS", "ExpressJS", "React Native", "Framer Motion", "TailwindCSS"]
   },
   {
     category: "Databases",
     color: "border-purple-400",
+    hoverBg: "rgba(192, 132, 252, 0.25)",
     skills: ["MongoDB", "SQL Server", "Firebase", "Prisma"]
   },
   {
     category: "Testing",
     color: "border-orange-400",
+    hoverBg: "rgba(251, 146, 60, 0.25)",
     skills: ["Jest", "Selenium", "Playwright", "XCTest", "JUnit"]
   },
   {
     category: "AI",
     color: "border-pink-400",
+    hoverBg: "rgba(244, 114, 182, 0.25)",
     skills: ["OpenAI", "Claude Code", "ElevenLabs"]
   },
   {
     category: "Cloud",
     color: "border-cyan-400",
+    hoverBg: "rgba(34, 211, 238, 0.25)",
     skills: ["GCP", "Azure", "Databricks"]
-  }, 
+  },
   {
     category: "Tools",
     color: "border-yellow-400",
+    hoverBg: "rgba(250, 204, 21, 0.25)",
     skills: ["Git", "Docker", "CI/CD", "Agile"]
   }
 ] as const;

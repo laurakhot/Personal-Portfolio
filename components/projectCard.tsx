@@ -29,11 +29,11 @@ export default function ProjectCard({title, description, tags, imageUrl, imageCl
         className="group mb-3 sm:mb-8 last:mb-0"
     >
         <a href = {projectUrl} target="_blank" rel="noopener noreferrer">
-            <section className="relative bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden pr-[45%] sm:pr-8 h-auto min-h-[16rem] sm:h-[20rem] mb-3 sm:mb-8 last:mb-0 group-even:pr-0 group-even:pl-[45%] sm:group-even:pl-8 hover:bg-gray-200 transition">
+            <section className="relative bg-gray-100 dark:bg-gray-800 max-w-[42rem] border border-black/5 dark:border-white/5 rounded-lg overflow-hidden pr-[45%] sm:pr-8 h-auto min-h-[16rem] sm:h-[20rem] mb-3 sm:mb-8 last:mb-0 group-even:pr-0 group-even:pl-[45%] sm:group-even:pl-8 hover:bg-gray-200 dark:hover:bg-gray-700 transition">
 
                 <div className="flex flex-col pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] h-full group-even:ml-0 sm:group-even:ml-[18rem]">
                     <h1 className="text-2xl font-semibold hover:underline"> {title} </h1>
-                    <p className="mt-2 leading-relaxed text-gray-700">{description}</p>
+                    <p className="mt-2 leading-relaxed text-gray-700 dark:text-gray-300">{description}</p>
                     <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
                     {tags.map((tag, index) => (
                         <li className="bg-black/[0.5] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full" key={index}>{tag}</li>

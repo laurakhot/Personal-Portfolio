@@ -5,9 +5,11 @@ import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timel
 import 'react-vertical-timeline-component/style.min.css';
 import { experiencesData } from '@/lib/data';
 import { useSectionInView } from '@/lib/hooks';
+import { useTheme } from '@/context/theme-context';
 
 export default function Experience() {
   const { ref } = useSectionInView("Experience", 0.3);
+  const { isDark } = useTheme();
 
   return (
     <section id="experience"
@@ -15,24 +17,25 @@ export default function Experience() {
     ref={ref}
     >
         <SectionHeading>My Experience</SectionHeading>
-        <VerticalTimeline lineColor="#f3f4f6">
+        <VerticalTimeline lineColor={isDark ? '#374151' : '#f3f4f6'}>
             {experiencesData.map((val, index) => (
                 <React.Fragment key={index}>
                     <VerticalTimelineElement
-                        contentStyle={{ background: '#f3f4f6',
+                        contentStyle={{
+                            background: isDark ? '#1f2937' : '#f3f4f6',
                             boxShadow: "none",
-                            border: "1px solid rgba(0, 0, 0, 0.1)",
+                            border: isDark ? '1px solid rgba(255,255,255,0.08)' : '1px solid rgba(0,0,0,0.1)',
                             textAlign: "left",
-                            }}
-                        contentArrowStyle={{ borderRight: '0.4rem solid #9ca3af' }}
+                        }}
+                        contentArrowStyle={{ borderRight: isDark ? '0.4rem solid #374151' : '0.4rem solid #9ca3af' }}
                         date={val.date}
                         icon={val.icon}
-                        iconStyle={{ background: "white", fontSize: "1.5rem" }}
+                        iconStyle={{ background: isDark ? '#1f2937' : 'white', fontSize: "1.5rem" }}
                     >
-                        <h3 className="text-xl font-bold text-gray-900 capitalize">{val.title}</h3>
-                        <p className="text-base font-semibold text-gray-700 !mt-1">{val.company}</p>
-                        <p className="text-sm text-gray-500 !mt-0.5 italic">{val.location}</p>
-                        <p className="!mt-3 !font-normal text-gray-600 leading-relaxed">{val.description}</p>
+                        <h3 className="text-xl font-bold text-gray-900 dark:text-gray-100 capitalize">{val.title}</h3>
+                        <p className="text-base font-semibold text-gray-700 dark:text-gray-300 !mt-1">{val.company}</p>
+                        <p className="text-sm text-gray-500 dark:text-gray-400 !mt-0.5 italic">{val.location}</p>
+                        <p className="!mt-3 !font-normal text-gray-600 dark:text-gray-400 leading-relaxed">{val.description}</p>
                     </VerticalTimelineElement>
                 </React.Fragment>
             ))}
